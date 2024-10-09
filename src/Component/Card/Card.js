@@ -49,7 +49,7 @@ const Card = (props) => {
                         <div className="card-main">
                             <div className="id_header">
                                 <div style={{ color: "grey", zIndex: 200, fontSize: "20px" }}>{value["id"]}</div>
-                                <div>{NameIcon(props.name[value["userId"]], props.name[value["userId"] + " Online"])}</div>
+                                <div>{NameIcon(props.name[value["userId"]], props.name[value["userId"] + " Online"], "icon1")}</div>
                             </div>
                             <div style={{ fontWeight: "bold", fontSize: "20px" }}>{value["title"]}</div>
                             <div className="img">

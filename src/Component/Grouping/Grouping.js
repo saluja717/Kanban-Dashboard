@@ -89,7 +89,7 @@ const Grouping = (props) => {
         else if (value == "Urgent") return <img className="name_icon" src={UrgentPriority} />;
         else if (value == 'Cancelled') return <img className="name_icon" src={Cancelled} />;
         else if (value == 'Done') return <img className="name_icon" src={Done} />
-        else return NameIcon(name[value], name[value + " Online"])
+        else return NameIcon(name[value], name[value + " Online"], "icon")
 
     }
 
