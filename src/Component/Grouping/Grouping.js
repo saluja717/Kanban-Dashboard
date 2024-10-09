@@ -46,6 +46,7 @@ const Grouping = (props) => {
         // }
         if (props.groupType == "Status") {
             setgroupName([]);
+            setcount([])
             // props.data.tickets.map((value) => {
             //     setgroupName((prev) => {
             //         const exists = prev.includes(value.status);
@@ -56,10 +57,18 @@ const Grouping = (props) => {
             //         return prev;
             //     });
             // })
-            setgroupName(["Todo", "In progress", "Backlog", "Done", "Cancelled"])
+            let status_data = ["Todo", "In progress", "Backlog", "Done", "Cancelled"];
+            setgroupName(status_data)
+
+            status_data.map((value) => {
+                setcount((prev) => [...prev, counter("status", value)]);
+            })
+
+
         }
         else if (props.groupType == "Priority") {
             setgroupName([]);
+            setcount([])
             setgroupName(["No priority", "Low", "Medium", "High", "Urgent"])
             for (let i = 0; i < 5; i++) {
                 setcount((prev) => [...prev, counter("priority", i)]);
