@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Kanban-Dashboard/static/css/main.861ee70c.css",
-    "main.js": "/Kanban-Dashboard/static/js/main.9cce2aa4.js",
+    "main.js": "/Kanban-Dashboard/static/js/main.91dbfa37.js",
     "static/media/Display.svg": "/Kanban-Dashboard/static/media/Display.0168095040354204011b596e30abf32e.svg",
     "static/media/Cancelled.svg": "/Kanban-Dashboard/static/media/Cancelled.360749f102ea2ac68b5841e9f9ff29dd.svg",
     "static/media/3 dot menu.svg": "/Kanban-Dashboard/static/media/3 dot menu.4caedb468f68b915626e0e35045257b3.svg",
@@ -18,10 +18,10 @@
     "static/media/Backlog.svg": "/Kanban-Dashboard/static/media/Backlog.97adf3356b7d2e775ef530f7aed206e0.svg",
     "static/media/To-do.svg": "/Kanban-Dashboard/static/media/To-do.c01d92afcffeef58b2cd9ae080df1f58.svg",
     "main.861ee70c.css.map": "/Kanban-Dashboard/static/css/main.861ee70c.css.map",
-    "main.9cce2aa4.js.map": "/Kanban-Dashboard/static/js/main.9cce2aa4.js.map"
+    "main.91dbfa37.js.map": "/Kanban-Dashboard/static/js/main.91dbfa37.js.map"
   },
   "entrypoints": [
     "static/css/main.861ee70c.css",
-    "static/js/main.9cce2aa4.js"
+    "static/js/main.91dbfa37.js"
   ]
 }
