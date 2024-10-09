@@ -43,6 +43,7 @@
     color: grey;
     font-weight: bold;
     cursor: pointer;
+    word-break: break-all;
 }
 
 .img div::before {

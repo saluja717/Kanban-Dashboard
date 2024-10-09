@@ -29,7 +29,7 @@
 
 .selection select {
     position: relative;
-    width: 100px;
+    width: 140px;
     padding: 5px;
     font-size: 20px;
 }
@@ -58,7 +58,6 @@ label {
 }
 
 .cancel {
-    cursor: pointer;
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -67,6 +66,7 @@ label {
 }
 
 .cancel img {
+    cursor: pointer;
     width: 30px;
     height: 30px;
 }

@@ -74,7 +74,7 @@ const Grouping = (props) => {
                 setcount((prev) => [...prev, counter("priority", i)]);
             }
         }
-        console.log("yes", count)
+        // console.log("yes", count)
     }, [props.groupType, props.ordering])
 
 
@@ -101,8 +101,8 @@ const Grouping = (props) => {
                     groupName ?
                         groupName.map((value, idx) => {
                             return (
-                                <>
-                                    <div key={idx} className="block">
+                                <div key={idx}>
+                                    <div className="block">
 
                                         <div className="main-handler__item">
                                             <div className="name_tag">
@@ -115,7 +115,7 @@ const Grouping = (props) => {
 
                                         <Card ordering={props.ordering} name={name} data={props.data.tickets} val={props.groupType != 'Priority' ? value : idx} groupType={props.groupType == "User" ? "userId" : props.groupType == "Status" ? "status" : "priority"} />
                                     </div>
-                                </>
+                                </div>
                             )
                         }) : <p>Loading</p>
                 }

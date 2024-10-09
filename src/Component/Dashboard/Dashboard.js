@@ -36,7 +36,7 @@ const Dashboard = () => {
     }, [])
 
     const changeDisplay = () => {
-        console.log("hii")
+        // console.log("hii")
         var val = document.getElementsByClassName("option")[0];
         const computedStyle = window.getComputedStyle(val);
         if (computedStyle.display === "none") {
@@ -52,9 +52,9 @@ const Dashboard = () => {
                 <div className="header">
                     <div className="btn" onClick={changeDisplay}> <img src={Display} style={{ marginRight: 10 }} /> Display   <img src={Down} style={{ marginLeft: 10, top: 3, position: "relative" }} /> </div>
                     <div className="option">
-                        <div class="cancel" onClick={changeDisplay}><img src={Cancelled} /></div>
+                        <div class="cancel"><img onClick={changeDisplay} src={Cancelled} /></div>
                         <div className="selection">
-                            <label for="group">Grouping</label>
+                            <label htmlFor="group">Grouping</label>
                             <select id="group" name="group" defaultValue={groupType} onChange={(e) => {
                                 setgroupType(e.target.value)
                                 localStorage.setItem('filter', JSON.stringify({
@@ -68,7 +68,7 @@ const Dashboard = () => {
                         </div>
 
                         <div className="selection" style={{ marginTop: "10px" }}>
-                            <label for="order">Ordering</label>
+                            <label htmlFor="order">Ordering</label>
                             <select name="order" defaultValue={ordering} onChange={(e) => {
                                 setOrdering(e.target.value)
                                 localStorage.setItem('filter', JSON.stringify({

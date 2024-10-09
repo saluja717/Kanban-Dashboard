@@ -3,7 +3,7 @@ import './NameIcon.css'
 
 const NameIcon = (name, online, icon) => {
     // Split the name by spaces
-    console.log(name)
+    // console.log(name)
     const nameParts = name.split(' ');
 
     // Determine the display text

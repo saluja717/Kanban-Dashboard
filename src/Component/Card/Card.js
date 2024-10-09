@@ -18,7 +18,7 @@ const Card = (props) => {
             return props.val == value[props.groupType]
         });
         if (props.ordering == "Priority") {
-            console.log("priority")
+            // console.log("priority")
             new_data.sort((a, b) => b.priority - a.priority)
         }
         else {
@@ -44,9 +44,9 @@ const Card = (props) => {
     return (
         <div className="card-main-com">
             {
-                data.length ? data.map((value) => {
+                data.length ? data.map((value, idx) => {
                     return (
-                        <div className="card-main">
+                        <div className="card-main" key={idx}>
                             <div className="id_header">
                                 <div style={{ color: "grey", zIndex: 200, fontSize: "20px" }}>{value["id"]}</div>
                                 <div>{NameIcon(props.name[value["userId"]], props.name[value["userId"] + " Online"], "icon1")}</div>
@@ -54,7 +54,10 @@ const Card = (props) => {
                             <div style={{ fontWeight: "bold", fontSize: "20px" }}>{value["title"]}</div>
                             <div className="img">
                                 <img src={get(value["priority"])} />
-                                <div>{value["tag"][0]}</div>
+                                {/* <div>{value["tag"][0]}</div> */}
+                                {value["tag"].map((val, idx) => {
+                                    return (<div key={idx}>{val}</div>)
+                                })}
                             </div>
                         </div>
                     );
