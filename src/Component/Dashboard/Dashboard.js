@@ -45,7 +45,7 @@ const Dashboard = () => {
     }
 
     return (
-        <>
+        <div>
             {groupType ?
                 <div className="header">
                     <div className="btn" onClick={changeDisplay}> <img src={Display} style={{ marginRight: 10 }} /> Display   <img src={Down} style={{ marginLeft: 10, top: 3, position: "relative" }} /> </div>
@@ -81,8 +81,8 @@ const Dashboard = () => {
                     </div>
                 </div>
                 : null}
-            {data ? <Grouping data={data} ordering={ordering} groupType={groupType} /> : null}
-        </>
+            <div>  {data ? <Grouping data={data} ordering={ordering} groupType={groupType} /> : null} </div>
+        </div>
     )
 }
 

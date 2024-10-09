@@ -1,7 +1,10 @@
 .header {
-    width: 100%;
+    width: 100vw;
     height: 80px;
     background-color: aliceblue;
+    position: fixed;
+    z-index: 300;
+    top: 0;
 }
 
 .option {

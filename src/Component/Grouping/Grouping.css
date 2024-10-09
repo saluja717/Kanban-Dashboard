@@ -13,6 +13,7 @@
     justify-content: space-around;
     column-gap: 100px;
     position: relative;
+    margin-top: 70px;
 }
 
 .main-handler__item {
