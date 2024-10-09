@@ -3,6 +3,8 @@ import Grouping from "../Grouping/Grouping";
 import './Dashboard.css'
 import Display from '../../assets/icon/Display.svg'
 import Down from '../../assets/icon/down.svg'
+import Cancelled from '../../assets/icon/Cancelled.svg'
+
 
 const Dashboard = () => {
     const [data, setdata] = useState(null);
@@ -50,7 +52,7 @@ const Dashboard = () => {
                 <div className="header">
                     <div className="btn" onClick={changeDisplay}> <img src={Display} style={{ marginRight: 10 }} /> Display   <img src={Down} style={{ marginLeft: 10, top: 3, position: "relative" }} /> </div>
                     <div className="option">
-
+                        <div class="cancel" onClick={changeDisplay}><img src={Cancelled} /></div>
                         <div className="selection">
                             <label for="group">Grouping</label>
                             <select id="group" name="group" defaultValue={groupType} onChange={(e) => {

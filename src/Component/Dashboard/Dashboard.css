@@ -56,3 +56,23 @@ label {
     cursor: pointer;
     user-select: none;
 }
+
+.cancel {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+.cancel img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width:800px) {
+    .option {
+        width: auto;
+    }
+}
