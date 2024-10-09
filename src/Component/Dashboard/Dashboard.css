@@ -1,0 +1,55 @@
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: aliceblue;
+}
+
+.option {
+    background-color: white;
+    width: 300px;
+    padding: 30px;
+    z-index: 100;
+    position: relative;
+    left: 7%;
+    top: 20px;
+    display: none;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+}
+
+.selection {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-content: center;
+}
+
+.selection select {
+    position: relative;
+    width: 100px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bolder;
+    color: gray;
+}
+
+.btn {
+    position: relative;
+    top: 14px;
+    left: 5%;
+    border: 1px solid lightgray;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 25px 25px 50px #cccdcf,
+        -25px -25px 50px #ffffff;
+    cursor: pointer;
+    user-select: none;
+}
