@@ -62,28 +62,6 @@
     justify-content: space-between;
 }
 
-.icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: orange;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    position: relative;
-}
-
-.online {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    bottom: 0;
-    right: 0;
-    border: 1px solid white;
-}
 
 @media (max-width:800px) {
     .card-main {

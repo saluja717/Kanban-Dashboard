@@ -13,6 +13,7 @@ import HighPriority from '../../assets/icon/Img - High Priority.svg'
 import UrgentPriority from '../../assets/icon/SVG - Urgent Priority colour.svg'
 import InProgress from '../../assets/icon/in-progress.svg'
 import Todo from '../../assets/icon/To-do.svg'
+import NameIcon from "../NameIcon/NameIcon";
 
 
 const Grouping = (props) => {
@@ -79,6 +80,8 @@ const Grouping = (props) => {
         else if (value == "Urgent") return <img className="name_icon" src={UrgentPriority} />;
         else if (value == 'Cancelled') return <img className="name_icon" src={Cancelled} />;
         else if (value == 'Done') return <img className="name_icon" src={Done} />
+        else return NameIcon(name[value], name[value + " Online"])
+
     }
 
     return (
