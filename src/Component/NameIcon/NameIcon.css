@@ -21,3 +21,9 @@
     right: 0;
     border: 1px solid white;
 }
+
+@media (max-width:800px) {
+    .icon {
+        display: none;
+    }
+}
